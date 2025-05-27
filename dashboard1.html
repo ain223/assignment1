@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dashboard 1 - Weather Monitoring</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    /* Purple color for headings */
+    .purple-text {
+      color: #6f42c1 !important;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #6f42c1;">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">MyDashboard</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+     
+    </div>
+  </nav>
+
+  <main class="container mt-5">
+    <h1 class="purple-text">Weather Monitoring Dashboard</h1>
+    <p class="mb-4">Displaying temperature forecast for selected city (5 days)</p>
+
+    <div class="row mb-4 g-2 align-items-end">
+      <div class="col-md-6">
+        <label for="cityInput" class="form-label purple-text">Enter City:</label>
+        <input type="text" id="cityInput" class="form-control" placeholder="e.g. London" />
+      </div>
+      <div class="col-md-3 d-grid">
+        <button id="fetchWeatherBtn" class="btn btn-purple">Get Weather</button>
+      </div>
+    </div>
+
+    <canvas id="weatherChart" width="600" height="300"></canvas>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="js/weather.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <style>
+    /* Custom purple button to match dashboard2 */
+    .btn-purple {
+      background-color: #6f42c1;
+      color: white;
+      border: none;
+    }
+    .btn-purple:hover,
+    .btn-purple:focus {
+      background-color: #5936a2;
+      color: white;
+    }
+  </style>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My Dashboard Project - Home</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+
+  <style>
+    body {
+      background-color: #f7f3fc;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #4b2c72;
+    }
+
+    .navbar {
+      background-color: #6f42c1;
+    }
+
+    .navbar-brand, .nav-link {
+      color: #fff !important;
+      font-weight: 600;
+    }
+
+    .main-heading {
+      color: #6f42c1;
+      font-weight: 700;
+    }
+
+    .card {
+      background: white;
+      border: 1px solid #e2d6f1;
+      border-radius: 1rem;
+      box-shadow: 0 0 10px rgba(111, 66, 193, 0.1);
+      transition: transform 0.2s ease-in-out;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(111, 66, 193, 0.2);
+    }
+
+    a.btn-purple {
+      background-color: #6f42c1;
+      color: white;
+    }
+
+    a.btn-purple:hover {
+      background-color: #5a34a1;
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="#">MyDashboard</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+    </div>
+  </nav>
+
+  <main class="container my-5">
+    <h1 class="main-heading mb-3">About Me</h1>
+    <p class="lead">Hello! I am <strong>Ain Fatihah</strong>, a student working on a web-based dashboard project. This site features two interactive dashboards displaying real-time data from public APIs.</p>
+
+    <hr class="my-4" />
+
+    <div class="row mt-4">
+      <div class="col-md-6">
+        <div class="card p-4 mb-3">
+          <h4 class="mb-3">Dashboard 1</h4>
+          <p>Weather Monitoring dashboard powered by OpenWeather API. View 5-day forecasts for your selected city.</p>
+          <a href="dashboard1.html" class="btn btn-purple">Go to Weather Dashboard</a>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card p-4 mb-3">
+          <h4 class="mb-3">Dashboard 2</h4>
+          <p>Cryptocurrency Prices dashboard powered by CoinGecko API. Get live price data for any coin you search.</p>
+          <a href="dashboard2.html" class="btn btn-purple">Go to Crypto Dashboard</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Bootstrap Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
